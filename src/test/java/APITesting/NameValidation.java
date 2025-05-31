@@ -9,8 +9,7 @@ import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 
 public class NameValidation {
-
-
+	
 	public void ExtractResponse(String token) 
 	{
 		Response res = RestAssured

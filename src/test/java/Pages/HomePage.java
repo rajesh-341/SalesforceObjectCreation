@@ -16,9 +16,7 @@ import PageObjects.CreateObjectPageObjects;
 public class HomePage extends LoginPage
 
 {
-
-
-	public void HomePage() throws IOException 
+	public void Home() throws IOException 
 	{
 		FileInputStream LoginPage = new FileInputStream(filepath);
 		Properties properties = new Properties();
