@@ -15,12 +15,15 @@ import org.testng.annotations.Test;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
+
 public class LaunchBrowser {
 
 	public WebDriver driver;
+	protected FileInputStream file;
+	public String filepath = "C:\\Users\\rajes\\eclipse-workspace\\SaalesforceTesting\\src\\test\\resources\\ConfigurationFiles\\config.properties";
+
 	public void BrowserActions() throws IOException
 	{
-		String filepath = "C:\\Users\\rajes\\eclipse-workspace\\SaalesforceTesting\\src\\test\\resources\\ConfigurationFiles\\config.properties";
 		
 		FileInputStream file = new FileInputStream(filepath);
 		Properties properties = new Properties();

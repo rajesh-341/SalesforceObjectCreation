@@ -7,12 +7,14 @@ import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+import Pages.HomePage;
 import Pages.LoginPage; 
 import org.testng.annotations.Test;
 
-public class CreateObject extends LoginPage{
+public class CreateObject extends HomePage{
 	
-	@Test(priority = 1)
+	@Test
 	public void LoginPage() throws IOException
 	{
 			FileInputStream file = new FileInputStream("C:\\Users\\rajes\\eclipse-workspace\\SaalesforceTesting\\src\\test\\resources\\TestData\\TestData.xlsx");
@@ -41,22 +43,6 @@ public class CreateObject extends LoginPage{
 				HomePage();
 				ObjManager();
 			}
-//			catch (NullPointerException e) {
-//				ObjManager();
-//			}
-		}	
+
+	}		
 }
-//	@Test(priority = 2)
-//	public void createObject() throws IOException
-//	{
-//		try
-//		{
-//		HomePage();
-//		}
-//		catch (NullPointerException e) {
-//			
-//			ObjManager();
-//		}
-//	}
-	
-		
